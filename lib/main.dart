@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 import 'package:worlds_fastest_vpn/screens/home.dart';
 import 'package:worlds_fastest_vpn/screens/splash.dart';
 
@@ -11,16 +12,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Wold's Fastest VPN",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      initialRoute: 'home',
-      routes: {
-        'splash': (context) => const Splash(),
-        'home': (context) => const Home(),
+    return Sizer(
+      builder: (context, orientation, deviceType) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: "Wold's Fastest VPN",
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          initialRoute: 'home',
+          routes: {
+            'splash': (context) => const Splash(),
+            'home': (context) => const Home(),
+          },
+        );
       },
     );
   }
