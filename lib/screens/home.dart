@@ -23,8 +23,11 @@ class Home extends StatelessWidget {
             child: Container(
               margin: const EdgeInsets.only(top: 8),
               child: SizedBox(
-                child: Image.asset(
-                  MyImages.appBarLogo,
+                child: Hero(
+                  tag: 'logo',
+                  child: Image.asset(
+                    MyImages.appBarLogo,
+                  ),
                 ),
               ),
             ),

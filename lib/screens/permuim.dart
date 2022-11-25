@@ -6,8 +6,8 @@ import 'package:sizer/sizer.dart';
 import 'package:worlds_fastest_vpn/config/MyIcons.dart';
 import 'package:worlds_fastest_vpn/config/MyImages.dart';
 
-class Permuim extends StatelessWidget {
-  const Permuim({super.key});
+class Premium extends StatelessWidget {
+  const Premium({super.key});
 
   @override
   Widget build(BuildContext context) {

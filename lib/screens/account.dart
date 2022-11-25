@@ -21,11 +21,21 @@ class Account extends StatelessWidget {
           backgroundColor: Colors.transparent,
           flexibleSpace: SafeArea(
             child: Container(
-              margin: const EdgeInsets.only(top: 8),
-              child: SizedBox(
-                child: Image.asset(
-                  MyImages.appBarLogo,
-                ),
+              margin: EdgeInsets.only(top: 2.sp),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  ImageIcon(AssetImage(MyIcons.arrowBack), color: const Color(0xfff404040), size: 24.sp),
+                  SizedBox(width: 8.w),
+                  Text(
+                    'Choose Location',
+                    style: GoogleFonts.roboto(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

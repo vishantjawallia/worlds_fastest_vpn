@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+import 'package:worlds_fastest_vpn/screens/account.dart';
 import 'package:worlds_fastest_vpn/screens/home.dart';
+import 'package:worlds_fastest_vpn/screens/location.dart';
+import 'package:worlds_fastest_vpn/screens/permuim.dart';
 import 'package:worlds_fastest_vpn/screens/splash.dart';
 
 void main() {
@@ -20,10 +23,13 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          initialRoute: 'home',
+          initialRoute: 'splash',
           routes: {
             'splash': (context) => const Splash(),
             'home': (context) => const Home(),
+            'account': (context) => const Account(),
+            'location': (context) => Location(),
+            'premium': (context) => const Premium(),
           },
         );
       },
