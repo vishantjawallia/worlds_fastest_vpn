@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.worlds_fastest_vpn">
    <application
-        android:label="worlds_fastest_vpn"
+        android:label="World's Fastest - VPN"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

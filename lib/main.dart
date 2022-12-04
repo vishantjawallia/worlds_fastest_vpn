@@ -21,8 +21,10 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: "Wold's Fastest VPN",
           theme: ThemeData(
+            visualDensity: VisualDensity.adaptivePlatformDensity,
             primarySwatch: Colors.blue,
           ),
+          // home: const Sample(),
           initialRoute: 'splash',
           routes: {
             'splash': (context) => const Splash(),

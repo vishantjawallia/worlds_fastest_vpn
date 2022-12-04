@@ -65,6 +65,18 @@ class _SplashState extends State<Splash> {
               ),
             ),
           ),
+          // percent > 0
+          //     ? Container(
+          //         padding: const EdgeInsets.symmetric(horizontal: 26),
+          //         margin: EdgeInsets.only(bottom: 26.sp),
+          //         child: CircularProgressIndicator(
+          //           value: percent,
+          //           backgroundColor: const Color(0xff3282B8).withOpacity(0.35),
+          //           color: const Color(0xff3282B8),
+          //           // minHeight: 4,
+          //         ),
+          //       )
+          //     : const SizedBox(),
           percent > 0
               ? Container(
                   padding: const EdgeInsets.symmetric(horizontal: 26),

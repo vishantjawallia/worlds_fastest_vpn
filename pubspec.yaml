@@ -38,6 +38,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   sizer: ^2.0.15
   google_fonts: ^3.0.1
+  syncfusion_flutter_maps: ^20.3.58
+  flutter_ripple: ^0.0.3
+  page_transition: ^2.0.9
 
 dev_dependencies:
   flutter_test:

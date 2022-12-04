@@ -8,4 +8,8 @@ class MyIcons {
   static String home = 'assets/home.png';
   static String search = 'assets/search.png';
   static String search2 = 'assets/search2.png';
+  static String crown = 'assets/crown.png';
+  static String restore = 'assets/restore.png';
+  static String location = 'assets/loaction.png';
+  static String copy = 'assets/copy.png';
 }

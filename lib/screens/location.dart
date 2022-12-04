@@ -18,6 +18,7 @@ class Location extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(15.h),
         child: AppBar(
+          automaticallyImplyLeading: false,
           centerTitle: true,
           elevation: 0,
           backgroundColor: Colors.transparent,
@@ -72,63 +73,66 @@ class Location extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
-        child: ListView.builder(
-          physics: const NeverScrollableScrollPhysics(),
-          scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          itemCount: 20,
-          itemBuilder: (BuildContext context, int index) {
-            return InkWell(
-              onTap: () {},
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 20),
-                decoration: index != 0
-                    ? BoxDecoration(
-                        border: Border(
-                          top: BorderSide(color: const Color(0xfff46424B).withOpacity(0.1), width: 2, style: BorderStyle.solid),
-                        ),
-                      )
-                    : const BoxDecoration(),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 14),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Image.asset(MyImages.flag, height: 20.sp),
-                          const SizedBox(width: 16),
-                          Text(
-                            'United States',
-                            style: GoogleFonts.roboto(
-                              fontSize: 15,
-                              color: const Color(0xfff404040),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+          child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            itemCount: 20,
+            itemBuilder: (BuildContext context, int index) {
+              return InkWell(
+                onTap: () {},
+                child: Container(
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  decoration: index != 0
+                      ? BoxDecoration(
+                          border: Border(
+                            top: BorderSide(color: const Color(0xfff46424B).withOpacity(0.1), width: 2, style: BorderStyle.solid),
+                          ),
+                        )
+                      : const BoxDecoration(),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 14),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset(MyImages.flag, height: 20.sp),
+                            const SizedBox(width: 16),
+                            Text(
+                              'United States',
+                              style: GoogleFonts.roboto(
+                                fontSize: 15,
+                                color: const Color(0xfff404040),
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          ImageIcon(
-                            AssetImage(MyIcons.tower3),
-                            color: const Color(0xfff3282b8),
-                            size: 14.sp,
-                          ),
-                          SizedBox(width: 4.w),
-                          InkWell(
-                            onTap: () {},
-                            child: Icon(Icons.keyboard_arrow_down_rounded, size: 20.sp, color: const Color(0xfff8D8D8D)),
-                          ),
-                        ],
-                      ),
-                    ],
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            ImageIcon(
+                              AssetImage(MyIcons.tower3),
+                              color: const Color(0xfff3282b8),
+                              size: 14.sp,
+                            ),
+                            SizedBox(width: 4.w),
+                            InkWell(
+                              onTap: () {},
+                              child: Icon(Icons.keyboard_arrow_down_rounded, size: 20.sp, color: const Color(0xfff8D8D8D)),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            );
-          },
+              );
+            },
+          ),
         ),
       ),
     );
