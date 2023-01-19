@@ -34,7 +34,8 @@ class Location extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      ImageIcon(AssetImage(MyIcons.arrowBack), color: const Color(0xfff404040), size: 24.sp),
+                      ImageIcon(AssetImage(MyIcons.arrowBack),
+                          color: const Color(0xfff404040), size: 24.sp),
                       SizedBox(width: 8.w),
                       Text(
                         'Choose Location',
@@ -90,7 +91,11 @@ class Location extends StatelessWidget {
                   decoration: index != 0
                       ? BoxDecoration(
                           border: Border(
-                            top: BorderSide(color: const Color(0xfff46424B).withOpacity(0.1), width: 2, style: BorderStyle.solid),
+                            top: BorderSide(
+                                color:
+                                    const Color(0xfff46424B).withOpacity(0.1),
+                                width: 2,
+                                style: BorderStyle.solid),
                           ),
                         )
                       : const BoxDecoration(),
@@ -122,7 +127,11 @@ class Location extends StatelessWidget {
                             SizedBox(width: 4.w),
                             InkWell(
                               onTap: () {},
-                              child: Icon(Icons.keyboard_arrow_down_rounded, size: 20.sp, color: const Color(0xfff8D8D8D)),
+                              child: Icon(
+                                Icons.keyboard_arrow_down_rounded,
+                                size: 20.sp,
+                                color: const Color(0xfff8D8D8D),
+                              ),
                             ),
                           ],
                         ),
