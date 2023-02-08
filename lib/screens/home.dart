@@ -47,24 +47,14 @@ class Home extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      PageTransition(
-                          type: PageTransitionType.rightToLeft,
-                          child: Location(),
-                          isIos: true));
+                  Navigator.push(context, PageTransition(type: PageTransitionType.rightToLeft, child: Location(), isIos: true));
                 },
                 child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
-                      BoxShadow(
-                          blurRadius: 12,
-                          color: Colors.grey.withOpacity(0.23),
-                          spreadRadius: 8,
-                          blurStyle: BlurStyle.outer),
+                      BoxShadow(blurRadius: 12, color: Colors.grey.withOpacity(0.23), spreadRadius: 8, blurStyle: BlurStyle.outer),
                     ],
                   ),
                   child: Row(
@@ -90,17 +80,13 @@ class Home extends StatelessWidget {
                                 children: [
                                   Text(
                                     'IP ',
-                                    style: GoogleFonts.roboto(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w700),
+                                    style: GoogleFonts.roboto(fontSize: 16, fontWeight: FontWeight.w700),
                                   ),
                                   Align(
                                     alignment: Alignment.bottomCenter,
                                     child: Text(
                                       '79.110.53.95',
-                                      style: GoogleFonts.roboto(
-                                          fontSize: 14,
-                                          color: const Color(0xfff404040)),
+                                      style: GoogleFonts.roboto(fontSize: 14, color: const Color(0xfff404040)),
                                     ),
                                   ),
                                 ],
@@ -119,8 +105,7 @@ class Home extends StatelessWidget {
                           SizedBox(width: 2.w),
                           InkWell(
                             onTap: () {},
-                            child: Icon(Icons.arrow_forward_ios_rounded,
-                                size: 16.sp, color: const Color(0xfff404040)),
+                            child: Icon(Icons.arrow_forward_ios_rounded, size: 16.sp, color: const Color(0xfff404040)),
                           ),
                         ],
                       ),
@@ -134,24 +119,20 @@ class Home extends StatelessWidget {
                 children: <Widget>[
                   Row(
                     children: [
-                      ImageIcon(AssetImage(MyIcons.arrowDown),
-                          color: const Color(0xfff3282b8), size: 20.sp),
+                      ImageIcon(AssetImage(MyIcons.arrowDown), color: const Color(0xfff3282b8), size: 20.sp),
                       const SizedBox(width: 8),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(
                             '28.5 ',
-                            style: GoogleFonts.roboto(
-                                fontSize: 16, fontWeight: FontWeight.w700),
+                            style: GoogleFonts.roboto(fontSize: 16, fontWeight: FontWeight.w700),
                           ),
                           Align(
                             alignment: Alignment.bottomCenter,
                             child: Text(
                               'KB/s',
-                              style: GoogleFonts.roboto(
-                                  fontSize: 14,
-                                  color: const Color(0xfff404040)),
+                              style: GoogleFonts.roboto(fontSize: 14, color: const Color(0xfff404040)),
                             ),
                           ),
                         ],
@@ -160,24 +141,20 @@ class Home extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      ImageIcon(AssetImage(MyIcons.arrowUp),
-                          color: const Color(0xfff404040), size: 20.sp),
+                      ImageIcon(AssetImage(MyIcons.arrowUp), color: const Color(0xfff404040), size: 20.sp),
                       const SizedBox(width: 8),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Text(
                             '21.6 ',
-                            style: GoogleFonts.roboto(
-                                fontSize: 16, fontWeight: FontWeight.w700),
+                            style: GoogleFonts.roboto(fontSize: 16, fontWeight: FontWeight.w700),
                           ),
                           Align(
                             alignment: Alignment.bottomCenter,
                             child: Text(
                               'KB/s',
-                              style: GoogleFonts.roboto(
-                                  fontSize: 14,
-                                  color: const Color(0xfff404040)),
+                              style: GoogleFonts.roboto(fontSize: 14, color: const Color(0xfff404040)),
                             ),
                           ),
                         ],
@@ -214,7 +191,7 @@ class Home extends StatelessWidget {
                   Positioned(
                     child: FlutterRipple(
                       rippleShape: BoxShape.circle,
-                      duration: const Duration(seconds: 1),
+                      // duration: const Duration(seconds: 1),
                       radius: 68,
                       onTap: () {},
                       rippleColor: const Color(0xfff3282B8),
@@ -228,10 +205,11 @@ class Home extends StatelessWidget {
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                            blurRadius: 12,
-                            color: Colors.grey.withOpacity(0.23),
-                            spreadRadius: 0,
-                            blurStyle: BlurStyle.outer),
+                          blurRadius: 12,
+                          color: Colors.grey.withOpacity(0.23),
+                          spreadRadius: 0,
+                          blurStyle: BlurStyle.outer,
+                        ),
                       ],
                     ),
                     child: Column(
@@ -245,8 +223,7 @@ class Home extends StatelessWidget {
                         SizedBox(height: 0.8.h),
                         Text(
                           '00:13:53 ',
-                          style: GoogleFonts.roboto(
-                              fontSize: 14, fontWeight: FontWeight.w700),
+                          style: GoogleFonts.roboto(fontSize: 14, fontWeight: FontWeight.w700),
                         ),
                       ],
                     ),
@@ -257,7 +234,7 @@ class Home extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }

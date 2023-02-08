@@ -9,7 +9,11 @@ class MyIcons {
   static String search = 'assets/search.png';
   static String search2 = 'assets/search2.png';
   static String crown = 'assets/crown.png';
-  static String restore = 'assets/restore.png';
+  // static String restore = 'assets/restore.png';
   static String location = 'assets/loaction.png';
-  static String copy = 'assets/copy.png';
+  // static String copy = 'assets/copy.png';
+  static String copy = 'assets/icons/copy.png';
+  static String id = 'assets/icons/id.png';
+  static String premium = 'assets/icons/premium.png';
+  static String restore = 'assets/icons/restore.png';
 }

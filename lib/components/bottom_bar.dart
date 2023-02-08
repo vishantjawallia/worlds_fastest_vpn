@@ -10,7 +10,8 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 22),
+      padding: const EdgeInsets.fromLTRB(26, 22, 26, 14),
+      // padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 22),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -19,7 +20,7 @@ class BottomBar extends StatelessWidget {
             icon: ImageIcon(
               AssetImage(MyIcons.profile),
               size: 18.sp,
-              color: const Color(0xfff95A0A8),
+              color: const Color(0xfff95a0a8),
             ),
             onPressed: () {},
           ),
@@ -28,7 +29,7 @@ class BottomBar extends StatelessWidget {
             icon: ImageIcon(
               AssetImage(MyIcons.home),
               size: 18.sp,
-              color: const Color(0xfff3282B8),
+              color: const Color(0xfff3282b8),
             ),
             onPressed: () {},
           ),
@@ -37,7 +38,7 @@ class BottomBar extends StatelessWidget {
             icon: ImageIcon(
               AssetImage(MyIcons.setting),
               size: 18.sp,
-              color: const Color(0xfff95A0A8),
+              color: const Color(0xfff95a0a8),
             ),
             onPressed: () {},
           ),

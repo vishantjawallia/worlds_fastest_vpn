@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             visualDensity: VisualDensity.adaptivePlatformDensity,
             primarySwatch: Colors.blue,
           ),
-          initialRoute: 'splash',
+          initialRoute: 'account',
           routes: {
             'splash': (context) => const Splash(),
             'home': (context) => const Home(),
