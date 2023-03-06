@@ -2,7 +2,7 @@
 
  ##   World's Fastest VPN
 
-this is ui/ux desgin for flutter app vpn which will be used for making fully functional web applications,ios,android,lunix,macos Applications.if you want to try it .....
+This is ui/ux desgin for flutter app vpn which will be used for making fully functional web applications,ios,android,lunix,macos Applications.if you want to try it .....
 
 # Screenshot
 
