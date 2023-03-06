@@ -8,15 +8,20 @@ this is ui/ux desgin for flutter app vpn which will be used for making fully fun
 
 ## Home
 
-![image description](ui/screens/home.png)
-## Location
-![image description](ui/screens/loation.png)
-## Account:-
-![image description](ui/screens/account.png)
-## Settings
-![image description](ui/screens/settings.png)
-## Pemuim
-![image description](ui/screens/pemuim.png)
+<img src="./ui/screens/home.png" height="600" />
+<h2> Location
+</h2>
+<img src="./ui/screens/loation.png" height="600" />
+<h2> Account
+</h2>
+<img src="./ui/screens/account.png" height="600" />
+<h2> Settings
+</h2>
+<img src="./ui/screens/settings.png" height="600" />
+<h2> 
+Pemuim
+</h2>
+<img src="./ui/screens/pemuim.png" height="600" />
 
 
  
